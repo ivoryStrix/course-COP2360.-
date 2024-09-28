@@ -1,0 +1,27 @@
+using System.Reflection;
+
+internal class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+
+            Octopus octopus = new Octopus ("jeff");
+            Console.WriteLine($"{Octopus.name}, an octopus with {Octopus.Legs} legs and is {Octopus.Age} years old with only {Octopus.eyes} eyes");
+        
+    }
+}
+
+
+public class Octopus
+{
+    public Octopus(string b){
+        name = b;
+    }
+    public static string name ;
+    public static readonly int Age = 10;
+  public static readonly int Legs = 8,eyes = 1;
+
+
+}
+
